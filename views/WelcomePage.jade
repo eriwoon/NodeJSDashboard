@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Welcome to Jade index2
+
+  p.
+  | #{username}
+
+  form(name="input", method="post")
+
+    | Username:
+    input(type="text", name="user")
+    br
+    | Password:
+    input(type="password", name="pswd")
+    br
+
+    input(type="submit", value="login")

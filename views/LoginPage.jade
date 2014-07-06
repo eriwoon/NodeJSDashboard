@@ -1,0 +1,30 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/loginpage.css')
+        include script
+    body
+        h1 Welcome!
+        | #{status}
+        #container
+            form(name="input", method="post")
+
+                label Username:
+                input(type="text", name="username", placeholder="Username")
+                br
+
+                label Password:
+                input(type="password", name="password", placeholder="Password")
+                br
+
+                label(id='lb') Database IP:
+                input(id="database", type="text", name="database", placeholder="Database IP", value="10.129.78.159")
+                br
+
+                label Listener:
+                input(id="listener", type="text", name="listener", placeholder="Listener", value="ora11g")
+                br
+
+                input(type="submit", value="login", id="submit")
+

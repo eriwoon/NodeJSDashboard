@@ -1,0 +1,51 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('/images/GrebesChick_FR-FR10639688214_1366x768.jpg')
+}
+
+a {
+  color: #00B7FF;
+}
+
+#container label {
+	float: left;
+	width: 100px;
+	padding-top: 5px;
+	text-align: right;
+}
+
+#submit{
+	padding-top: 6px;
+	padding-right: 15px;
+	padding-bottom: 6px;
+	padding-left: 15px;
+
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	-wibkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+
+	border-top-color: rgba(0, 0, 0, 0.0470588);
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-right-color: rgba(0, 0, 0, 0.0470588);
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-color: rgba(0, 0, 0, 0.0470588);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-color: rgba(0, 0, 0, 0.0470588);
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+
+#container input {
+	background-color: #ffffff;
+	border: 1px solid #d5d5d5;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+}
