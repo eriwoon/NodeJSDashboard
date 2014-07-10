@@ -1,2 +1,4 @@
 node_modules/oracle/
 node_modules/sqlite3/
+npm-debug.log
+
