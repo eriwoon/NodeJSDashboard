@@ -4,14 +4,15 @@ exports.connectCheck = function(connectData, callback){
     oracle.connect(connectData, callback);
 }
 
-exports.query = function(err, connectData, querystatement,callback){
+exports.query = function( connectData, querystatement ,success_callback, error_callback){
+    var err;
     oracle.connect(connectData, 
         function(err, connection) { 
-            if (err) {return;}
+            if (err) {error_callback(err);return;}
             connection.execute( querystatement, [], function(err, results) {
                 connection.close();
-                if (err) {return;}
-                callback(results);
+                if (err) {error_callback(err);return;}
+                else success_callback(results);
             });
         }
     );
